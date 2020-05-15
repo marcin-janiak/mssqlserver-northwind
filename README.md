@@ -1,4 +1,5 @@
 # mssqlserver-northwind 
+[![HitCount](http://hits.dwyl.com/marcin-janiak/mssqlserver-northwind.svg)](http://hits.dwyl.com/marcin-janiak/mssqlserver-northwind)
 [![](https://images.microbadger.com/badges/version/marcinjaniak/mssqlserver-northwind.svg)](https://microbadger.com/images/marcinjaniak/mssqlserver-northwind "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/marcinjaniak/mssqlserver-northwind.svg)](https://microbadger.com/images/marcinjaniak/mssqlserver-northwind "Get your own image badge on microbadger.com")
 
