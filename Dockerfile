@@ -11,5 +11,8 @@ COPY northwind.sql /usr/share/northwind.sql
 EXPOSE 1433
 COPY entrypoint.sh .
 COPY import-data.sh .
+RUN chmod +x /entrypoint.sh
+RUN chmod +x /import-data.sh
+
 ENTRYPOINT ./entrypoint.sh --SA_PASSWORD "${SA_PASSWORD}" --DEFERRED_SECONDS "${DEFERRED_SECONDS}"
 
