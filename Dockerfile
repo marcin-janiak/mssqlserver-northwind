@@ -8,11 +8,10 @@ ENV MSSQL_PID="Express"
 ENV PATH=$PATH:/opt/mssql-tools/bin
 
 COPY northwind.sql /usr/share/northwind.sql
-EXPOSE 1433
 COPY entrypoint.sh .
 COPY import-data.sh .
-RUN chmod +x /entrypoint.sh
-RUN chmod +x /import-data.sh
 
-ENTRYPOINT ./entrypoint.sh --SA_PASSWORD "${SA_PASSWORD}" --DEFERRED_SECONDS "${DEFERRED_SECONDS}"
+EXPOSE 1433
+
+ENTRYPOINT ["sh", "/entrypoint.sh", "--SA_PASSWORD $SA_PASSWORD", "--DEFERRED_SECONDS $DEFERRED_SECONDS"]
 
